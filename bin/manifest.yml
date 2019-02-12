@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: EmployeeDemoTeamX
+  buildpack: java_buildpack
+  path: ./target/EmployeeDemoTeamX-1.0-SNAPSHOT.jar
+  memory: 1024M
+  domain: mybluemix.net
+  host: employeedemoteamx
+  services:
+    - employeedemoteamx-cloudant-1548530325500
